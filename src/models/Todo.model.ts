@@ -28,6 +28,7 @@ export const initTodoModel = (sequelize: Sequelize) => {
             defaultValue: false
         }
 }, { modelName: "Todo", // que luego se cambia a plural "Todos" pq la DB guarda varias tablaS
+    // paranoid: true, // por alguna razón el activarlo hace que falle todo
     // sequelize: sequelize
     sequelize // Instance of sequelize that reflects the connection
 })

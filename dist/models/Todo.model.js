@@ -23,6 +23,7 @@ const initTodoModel = (sequelize) => {
             defaultValue: false
         }
     }, { modelName: "Todo",
+        // paranoid: true, // por alguna razón el activarlo hace que falle todo
         // sequelize: sequelize
         sequelize // Instance of sequelize that reflects the connection
     });
